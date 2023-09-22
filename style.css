@@ -146,6 +146,24 @@ $breakpoint arguments choices:
 	}
 }
 
+.site .styled-font-40 {
+	/*
+	@if $breakpoint ==2xl {
+		@media only screen and (max-width: 96em) {
+			@content;
+		}
+
+		//1536px
+	}
+	*/
+}
+
+@media only screen and (max-width: 40em) {
+	.site .styled-font-40 {
+		font-size: 40px !important;
+	}
+}
+
 .site .big-header {
 	font-size: 58px;
 	/*
@@ -177,6 +195,44 @@ $breakpoint arguments choices:
 		font-size: 40px;
 		line-height: 40px;
 		letter-spacing: -0.25px;
+	}
+}
+
+.site .section-2-container .elipse-png {
+	display: none;
+	/*
+	@if $breakpoint ==2xl {
+		@media only screen and (max-width: 96em) {
+			@content;
+		}
+
+		//1536px
+	}
+	*/
+}
+
+@media only screen and (max-width: 40em) {
+	.site .section-2-container .elipse-png {
+		display: block;
+	}
+}
+
+.site .section-2-container .elips-png {
+	display: block;
+	/*
+	@if $breakpoint ==2xl {
+		@media only screen and (max-width: 96em) {
+			@content;
+		}
+
+		//1536px
+	}
+	*/
+}
+
+@media only screen and (max-width: 40em) {
+	.site .section-2-container .elips-png {
+		display: none;
 	}
 }
 
@@ -310,6 +366,21 @@ $breakpoint arguments choices:
 	font-weight: 400;
 	font-family: 'Montserrat';
 	color: #bbb4b4;
+	/*
+	@if $breakpoint ==2xl {
+		@media only screen and (max-width: 96em) {
+			@content;
+		}
+
+		//1536px
+	}
+	*/
+}
+
+@media only screen and (max-width: 40em) {
+	.site .main-contact .form-contr .get-started-form .full-name-cont .name-input {
+		width: 100%;
+	}
 }
 
 .site .main-contact .form-contr .get-started-form .email-cont .email-input {
@@ -322,6 +393,21 @@ $breakpoint arguments choices:
 	font-weight: 400;
 	font-family: 'Montserrat';
 	color: #bbb4b4;
+	/*
+	@if $breakpoint ==2xl {
+		@media only screen and (max-width: 96em) {
+			@content;
+		}
+
+		//1536px
+	}
+	*/
+}
+
+@media only screen and (max-width: 40em) {
+	.site .main-contact .form-contr .get-started-form .email-cont .email-input {
+		width: 100%;
+	}
 }
 
 .site .main-contact .form-contr .get-started-form .number {
@@ -329,6 +415,15 @@ $breakpoint arguments choices:
 	justify-content: space-between;
 	width: 909px;
 	margin-top: 20px;
+	/*
+	@if $breakpoint ==2xl {
+		@media only screen and (max-width: 96em) {
+			@content;
+		}
+
+		//1536px
+	}
+	*/
 }
 
 .site .main-contact .form-contr .get-started-form .number .country-input {
@@ -341,6 +436,21 @@ $breakpoint arguments choices:
 	font-weight: 400;
 	font-family: 'Montserrat';
 	color: #000;
+	/*
+	@if $breakpoint ==2xl {
+		@media only screen and (max-width: 96em) {
+			@content;
+		}
+
+		//1536px
+	}
+	*/
+}
+
+@media only screen and (max-width: 40em) {
+	.site .main-contact .form-contr .get-started-form .number .country-input {
+		width: 91px;
+	}
 }
 
 .site .main-contact .form-contr .get-started-form .number .num-input {
@@ -353,6 +463,27 @@ $breakpoint arguments choices:
 	font-weight: 400;
 	font-family: 'Montserrat';
 	color: #bbb4b4;
+	/*
+	@if $breakpoint ==2xl {
+		@media only screen and (max-width: 96em) {
+			@content;
+		}
+
+		//1536px
+	}
+	*/
+}
+
+@media only screen and (max-width: 40em) {
+	.site .main-contact .form-contr .get-started-form .number .num-input {
+		width: 271.277px;
+	}
+}
+
+@media only screen and (max-width: 40em) {
+	.site .main-contact .form-contr .get-started-form .number {
+		width: 100%;
+	}
 }
 
 .site .main-contact .form-contr .get-started-form .check-box-cont {
@@ -371,6 +502,28 @@ $breakpoint arguments choices:
 	font-size: 28px;
 	font-weight: 400;
 	font-family: 'Montserrat';
+	/*
+	@if $breakpoint ==2xl {
+		@media only screen and (max-width: 96em) {
+			@content;
+		}
+
+		//1536px
+	}
+	*/
+}
+
+@media only screen and (max-width: 40em) {
+	.site .main-contact .form-contr .get-started-form .check-box-cont .check-input label .wpcf7-list-item-label {
+		width: 100%;
+		font-size: 20px;
+	}
+}
+
+.site .main-contact .form-contr .get-started-form .submit-btn {
+	display: flex;
+	justify-content: center;
+	margin-top: 46px;
 }
 
 .site .main-contact .form-contr .get-started-form .submit-btn .submit-button {
@@ -382,6 +535,28 @@ $breakpoint arguments choices:
 	padding-right: 305.07px;
 	padding-bottom: 27.45px;
 	border: none;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 50px;
+	/*
+	@if $breakpoint ==2xl {
+		@media only screen and (max-width: 96em) {
+			@content;
+		}
+
+		//1536px
+	}
+	*/
+}
+
+@media only screen and (max-width: 40em) {
+	.site .main-contact .form-contr .get-started-form .submit-btn .submit-button {
+		padding-left: 107px;
+		padding-top: 20px;
+		padding-right: 117px;
+		padding-bottom: 19px;
+	}
 }
 
 /*# sourceMappingURL=style.css.map */
