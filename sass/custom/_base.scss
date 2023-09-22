@@ -16,16 +16,17 @@ $tertiary-color: #ff2546;
 $main-color: #eb5757;
 $header-color: #333;
 $footer-text-color: #828282;
-$main-bg-color:#fafafa;
+$main-bg-color:#F9FBFF;
 
 body {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	background: $main-bg-color;
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	width: 100%;
 	color: $primary-color;
+	overflow-x: hidden;
 }
 
 html {
@@ -81,6 +82,10 @@ p {
 
 .gap-48 {
 	gap: 48px !important;
+}
+
+.none {
+	display: none;
 }
 
 /*

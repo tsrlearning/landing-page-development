@@ -8,19 +8,230 @@
 		display: none !important;
 	}
 
-	.main-header {
-		width: 100%;
-		// margin: auto;
-		// padding-left: 123px !important;
-		// padding-right: 126px !important;
-		padding: 0 126px 0 123px !important;
-		height: 88px;
+	.header-bg {
+		// background-color: #0055cd;
+		background-color: #F9FBFF;
 
 		@include respond(sm) {
-			width: 100%;
-			margin: auto;
-			padding: 10px !important;
-			height: 88px;
+			// background-color: #fff;
+			background-color: #0055cd;
 		}
 	}
+
+	.big-header {
+		font-size: 58px;
+
+		.bg-blue {
+			color: #0055cd;
+			font-family: Montserrat;
+			font-size: 85px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: 87px;
+			letter-spacing: -4.25px;
+		}
+
+		@include respond(sm) {
+			font-size: 36px;
+
+			.bg-blue {
+				font-size: 40px;
+				line-height: 40px;
+				letter-spacing: -0.25px;
+			}
+		}
+	}
+
+	.testimonial-bg {
+
+		background-color: #d9e8ff;
+
+		.card-1 {
+			display: flex;
+			flex-direction: row;
+
+			.left-quote {
+				position: absolute;
+
+				@include respond(sm) {
+					position: relative;
+				}
+			}
+
+		}
+
+
+		.card-1::after {
+			content: url("http://localhost:10038/wp-content/uploads/2023/09/Line-22.svg") !important;
+			width: 4px;
+
+			@include respond(sm) {
+				display: none;
+			}
+		}
+
+		.card-2::after {
+
+			@extend .card-1::after;
+		}
+
+		.card-2 {
+
+			@extend .card-1;
+		}
+
+		@include respond(sm) {
+			background-color: $main-bg-color;
+		}
+
+		.display-none {
+
+			display: none !important;
+
+			@include respond(sm) {
+				display: block !important;
+			}
+		}
+
+		.right-quote {
+
+			display: block;
+
+			@include respond(sm) {
+				display: none;
+			}
+		}
+
+		.left-quote {
+			position: absolute;
+
+			@include respond(sm) {
+				position: relative;
+			}
+		}
+	}
+
+	.main-contact {
+
+		.form-contr {
+
+			.get-started-form {
+
+				.full-name-cont {
+
+					.name-input {
+						border: none;
+						border-bottom: 1px solid #000;
+						width: 908.403px;
+						height: 48px;
+						background-color: #f8f9fabd;
+						font-size: 30px;
+						font-weight: 400;
+						font-family: 'Montserrat';
+						color: #bbb4b4;
+					}
+				}
+
+				.email-cont {
+
+					.email-input {
+						border: none;
+						border-bottom: 1px solid #000;
+						width: 908.403px;
+						height: 48px;
+						background-color: #f8f9fabd;
+						font-size: 30px;
+						font-weight: 400;
+						font-family: 'Montserrat';
+						color: #bbb4b4;
+					}
+				}
+
+				.number {
+
+					display: flex;
+					justify-content: space-between;
+					width: 909px;
+					margin-top: 20px;
+					// gap: 87px;
+
+					.country-input {
+						border: none;
+						border-bottom: 1px solid #000;
+						width: 196.411px;
+						height: 48px;
+						background-color: #f8f9fabd;
+						font-size: 30px;
+						font-weight: 400;
+						font-family: 'Montserrat';
+						color: #000;
+					}
+
+					.num-input {
+						border: none;
+						border-bottom: 1px solid #000;
+						width: 707px;
+						height: 48px;
+						background-color: #f8f9fabd;
+						font-size: 30px;
+						font-weight: 400;
+						font-family: 'Montserrat';
+						color: #bbb4b4;
+					}
+				}
+
+				.check-box-cont {
+					margin-top: 54px;
+
+					.check-input {
+
+						label {
+							display: flex;
+							gap: 41px;
+							align-items: start;
+
+							.wpcf7-list-item-label {
+								width: 842px;
+								display: block;
+								font-size: 28px;
+								font-weight: 400;
+								font-family: 'Montserrat';
+							}
+						}
+					}
+				}
+
+				.submit-btn {
+
+					.submit-button {
+						background-color: #0055CD;
+						border-radius: 50px;
+						color: #fff;
+						padding-left: 340px;
+						padding-top: 25px;
+						padding-right: 305.07px;
+						padding-bottom: 27.45px;
+						border: none;
+					}
+				}
+			}
+		}
+
+	}
+
+	// .main-header {
+	// 	width: 100%;
+	// 	// margin: auto;
+	// 	// padding-left: 123px !important;
+	// 	// padding-right: 126px !important;
+	// 	padding: 0 126px 0 123px !important;
+	// 	height: 88px;
+
+	// 	@include respond(sm) {
+	// 		width: 100%;
+	// 		margin: auto;
+	// 		padding: 10px !important;
+	// 		height: 88px;
+	// 	}
+	// }
 }
